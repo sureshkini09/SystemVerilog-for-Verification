@@ -1,0 +1,38 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Jun 23, 2018 at 12:12:21 IST
+irun
+	-access +rwc
+	static_properties.sv
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x5c7949f7
+		static_propeties
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.\$unit_0x5c7949f7 :compilation_unit <0x17031057>
+			streams:   0, words:     0
+		worklib.\$unit_0x5c7949f7 :compilation_unit <0x2c17d2a8>
+			streams:   8, words:  3000
+		worklib.static_propeties:sv <0x07923054>
+			streams:   1, words:   944
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   1       1
+		Registers:                 7       7
+		Initial blocks:            1       1
+		Compilation units:         1       1
+		SV Class declarations:     1       1
+		SV Class specializations:  1       1
+	Writing initial simulation snapshot: worklib.static_propeties:sv
+
+Trying to check out license...
+	Incisive_Enterprise_Simulator 15.20 - Failed
+	Incisive_Enterprise_Verifier 15.20 - Failed
+	Xcelium_Single_Core 16.00 - Failed
+	Xcelium_Safety 16.00 - Failed
+ncsim: *F,NOLICN: Unable to checkout license for the simulation. (flag - 2) 'lic_error -5'.
+TOOL:	irun(64)	15.20-s086: Exiting on Jun 23, 2018 at 12:12:21 IST  (total: 00:00:00)

@@ -1,0 +1,28 @@
+s1(14Oct2024:11:58:22):  irun -access +rwc ../Codes/class_def.sv 
+s2(14Oct2024:11:59:34):  irun -access +rwc ../Codes/class_def.sv 
+s3(14Oct2024:12:01:59):  irun -access +rwc ../Codes/class_def.sv 
+s4(14Oct2024:12:03:30):  irun -access +rwc ../Codes/class_def.sv 
+s5(14Oct2024:12:03:52):  irun -access +rwc ../Codes/class_def.sv 
+s6(14Oct2024:12:04:54):  irun -access +rwc ../Codes/class_def.sv 
+s7(14Oct2024:12:09:05):  irun -access +rwc ../Codes/class_def.sv 
+s8(14Oct2024:12:15:44):  irun -access +rwc ../Codes/class_def.sv 
+s9(14Oct2024:12:19:36):  irun -access +rwc ../Codes/class_def.sv 
+s10(14Oct2024:12:21:38):  irun -access +rwc ../Codes/class_def.sv 
+s11(14Oct2024:12:22:00):  irun -access +rwc ../Codes/class_def.sv 
+s12(14Oct2024:12:22:51):  irun -access +rwc ../Codes/class_def.sv 
+s13(14Oct2024:12:23:02):  irun -access +rwc ../Codes/class_def.sv 
+s14(14Oct2024:12:24:25):  irun -access +rwc ../Codes/class_def.sv 
+s15(15Oct2024:12:54:25):  irun -access class_def.sv 
+s16(15Oct2024:13:04:58):  irun -access +rwc ../Codes class_def.sv 
+s17(15Oct2024:13:06:15):  irun -access +rwc ../Codes class_def.sv 
+s18(15Oct2024:13:07:02):  irun -access +rwc Codes/class_def.sv 
+s19(15Oct2024:13:08:00):  irun -access +rwc ../ Codes/class_def.sv 
+s20(15Oct2024:13:08:14):  irun -access +rwc ../Codes/class_def.sv 
+s21(15Oct2024:13:08:44):  irun -access +rwc ../Codes/class_def.sv 
+s22(15Oct2024:13:11:40):  irun -access +rwc ../Codes/class_def.sv 
+s23(15Oct2024:13:14:42):  irun -access +rwc ../Codes/class_def.sv 
+s24(15Oct2024:13:15:02):  irun -access +rwc ../Codes/class_def.sv 
+s25(15Oct2024:13:35:14):  irun -access +rwc ../Codes/shallowCopy.sv 
+s26(21Oct2024:12:45:29):  irun -access +rwc ../inheritance.sv 
+s27(21Oct2024:12:45:43):  irun -access +rwc inheritance.sv 
+s28(21Oct2024:06:22:41):  irun -access +rwc /home/adld21ec255/Codes/shallowCopy.sv 

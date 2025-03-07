@@ -1,0 +1,7 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Oct 21, 2024 at 06:22:41 EDT
+irun
+	-access +rwc
+	/home/adld21ec255/Codes/shallowCopy.sv
+irun: *E,FILEMIS: Cannot find the provided file /home/adld21ec255/Codes/shallowCopy.sv.
+TOOL:	irun(64)	15.20-s086: Exiting on Oct 21, 2024 at 06:22:41 EDT  (total: 00:00:00)

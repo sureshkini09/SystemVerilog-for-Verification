@@ -1,0 +1,22 @@
+//parant class
+class parent_class;
+	//bit [31:0]addr;
+	//bit [31:0]data;
+endclass
+
+//child class
+class child_class extends parent_class;
+	bit [31:0]data;
+	bit [31:0]addr;
+endclass
+
+module inheritance;
+	initial begin
+		child_class c = new();
+		c.addr = 10;
+		c.data=20;
+		c.addr=5;
+		c.data=15;
+		$display("Value of addr=%0d data=%0d addr=%0d data=%0d",c.addr,c.data,c.addr,c.data);
+	end
+endmodule
