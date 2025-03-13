@@ -32,6 +32,7 @@ Additionally, this repository includes contributions and explanations to enhance
 ## Topics Covered
 
 *   **Connecting the Testbench and Design:** Separating testbench and design, utilizing the interface construct.
+*   Rising and Falling Edge Detector
 
 ## Topics to be Covered
 
