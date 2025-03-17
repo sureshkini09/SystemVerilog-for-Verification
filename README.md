@@ -33,6 +33,7 @@ Additionally, this repository includes contributions and explanations to enhance
 
 *   **Connecting the Testbench and Design:** Separating testbench and design, utilizing the interface construct.
 *   Rising and Falling Edge Detector
+*   8-bit ALU
 
 ## Topics to be Covered
 
