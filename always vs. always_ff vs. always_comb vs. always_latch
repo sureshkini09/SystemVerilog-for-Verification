@@ -1,0 +1,38 @@
+1. always
+-> Inherited from verilog and not recommended in SystemVerilog
+-> Its run indefinitely when any signal in its sensitivity list changes
+-> always@* does not infer a complete sensitivity list when the always @* block contains functions. Namely, it will not infer sensitivity to signals that are externally referenced in a function or a task that is called from the always block. It will only be sensitive to the signals passed into the function or task. Here is an example that illustrates the behaviour:
+
+
+2. always_ff
+-> Recommended for Sequential Logic and Used for registers and flip-flops.Ensures synthesis as a flip-flop.
+-> Must contain only non-blocking assignments (<=).
+-> Represents behavior where the output value is updated only on a clock edge (positive, negative, or both) based on the input values at that particular clock edge.
+->Rule	Allowed?
+One event control (posedge/negedge only)	✅ Yes
+Blocking timing (#delay, wait(), @())	❌ No
+Multiple always_ff writing the same variable	❌ No
+Function writing to a variable used in always_ff	❌ No
+Calling a function that returns a value	✅ Yes
+
+
+3. always_comb
+-> Ensures combinational behavior (no unintended latches). More efficient simulation.
+-> Automatically infers the sensitivity list.
+-> There is an inferred sensitivity list that includes the expressions defined.
+-> always_comb automatically triggered once at time zero, whereas always @* waits until a change occurs on a signal in the inferred sensitivity list.
+-> The variables written on the left-hand side of assignments shall not be written to by any other process
+-> always_comb is sensitive to changes within the contents of a function, whereas always @* is only sensitive to changes to the arguments of a function.
+-> Task calls are allowed in an always_comb, but the contents of the tasks do not add anything to the sensitivity list
+
+
+4. always_latch
+-> Used to model latch logic.
+-> Infers a latch if certain conditions are not met.
+-> If "else" condition is missing, the tool ensures latch inference.
+-> It has identical rules to always_comb, and the SystemVerilog LRM recommends software tools perform additional checks to ensure code within the procedure models latch behaviour.
+
+
+Sources:
+-> https://vlsiquest.com/always-comb-always-latch-always-ff/#2-eael-table-of-content
+-> https://www.verilogpro.com/systemverilog-always_comb-always_ff/
