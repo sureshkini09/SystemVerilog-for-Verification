@@ -1,0 +1,18 @@
+Final Recommendation(odd counter)
+Feature	1st Code Snippet (with nxt_cnt)	2nd Code Snippet (direct increment)
+Readability	✅ Better (modular)	❌ Less clear if modified
+Debugging	✅ Easier (separate logic)	❌ Harder to trace values
+Scalability	✅ Better for complex logic	❌ Harder to modify later
+Synthesis Efficiency	⚠️ Slightly more logic (depends on tool)	✅ Direct assignment (efficient)
+Professional Use	✅ Preferred in industry	❌ Used in quick/simple cases
+
+
+Which One Should You Use?(generate a clock signal)
+Feature	always begin ... (1st Snippet)	always #10 clk = ~clk; (2nd Snippet)
+Readability	❌ Less readable	✅ More readable
+Compactness	❌ More lines	✅ Single-line
+Flexibility	✅ Good for asymmetric clocks	❌ Limited to 50% duty cycle
+Common Practice	❌ Less common	✅ Preferred in testbenches
+Recommendation:
+Use Snippet 2 (always #10 clk = ~clk;) in most testbenches where a 50% duty cycle is fine.
+Use Snippet 1 (always begin ...) if you need a non-50% duty cycle (e.g., clk high for 6 units, low for 4)
