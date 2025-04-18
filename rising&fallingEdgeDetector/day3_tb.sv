@@ -38,7 +38,7 @@ module design_tb;
 
     // Dump waveforms for debugging
     initial begin
-        $dumpfile("day3.vcd");
+        $dumpfile("day3.vcd"); 
         $dumpvars(0, design_tb);
     end
 
