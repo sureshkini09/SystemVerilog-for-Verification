@@ -45,8 +45,6 @@ module day14_tb ();
 
   localparam NUM_PORTS = 4;
 
-  logic clk;
-  logic reset;
   logic[NUM_PORTS-1:0] req_i;
   logic[NUM_PORTS-1:0] gnt_o;
 
