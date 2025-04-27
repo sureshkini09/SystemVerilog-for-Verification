@@ -34,6 +34,14 @@ Additionally, this repository includes contributions and explanations to enhance
 *   **Connecting the Testbench and Design:** Separating testbench and design, utilizing the interface construct.
 *   Rising and Falling Edge Detector
 *   8-bit ALU
+*   Linear Feedback Shift Register
+*   Parameterized fixed priority arbiter
+*   Round-Robin arbiter
+
+## Important Points
+
+*   In synthesizable SystemVerilog, break is NOT allowed inside a for loop (only allowed in simulation/testbench).
+
 
 ## Topics to be Covered
 
